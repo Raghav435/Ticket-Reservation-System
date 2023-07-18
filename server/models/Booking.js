@@ -19,11 +19,8 @@ const bookingSchema = new mongoose.Schema(
       required: false,
     },
 
-    guest: { type: Schema.Types.ObjectId, ref: "Guest" },
     user: { type: Schema.Types.ObjectId, ref: "User" },
-    owner: { type: Schema.Types.ObjectId, ref: "Owner" },
     bus: { type: Schema.Types.ObjectId, ref: "Bus" },
-    self: { type: Schema.Types.ObjectId, ref: "Owner" },
 
     verification: {
       type: String,
